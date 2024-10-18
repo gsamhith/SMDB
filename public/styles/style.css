@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 17, 48);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+    padding: 50px 4em;
+}
+header h1{
+    font-size: 4em;
+    margin: 0px 20% 0px 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px 40px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0px 25px ;
+}
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.navbar a:active{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.navbar a:focus{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.navbar a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+#mainContainer form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+#mainContainer form input{
+    width: 80%;
+    height: 80px;
+    margin: 10px 0px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 30px;
+}
+#mainContainer form input:focus{
+    outline: none;
+}
+#searchBtn{
+    width: 20%;
+    height: 80px;
+    margin: 10px 0px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0px;
+    font-size: 30px;
+    background-color: rgb(42, 58, 95);
+    color: white;
+    cursor: pointer;
+}
+#searchBtn:hover{
+    background-color: rgb(42, 58, 95);
+    color: white;
+}
+#searchBtn:active{
+    background-color: rgb(42, 58, 95);
+    color: white;
+}
+#searchBtn:focus{
+    background-color: rgb(42, 58, 95);
+    color: white;
+}
+#searchBtn:visited{
+    background-color: rgb(42, 58, 95);
+    color: white;
+}
+
+#result{
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 20px;
+    padding: 0px 20px;
+}
+#movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 20px;
+    padding: 0px 20px;
+
+}
+#result #info{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+#result #poster{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+#result #info h1{
+    font-size: 3.5em;
+    margin: 0px 20px 20px;
+    padding: 0px 20px;
+}
+#result #info #plot{
+    font-size: 25px;
+    text-align: justify;
+    margin: 20px 20px;
+    padding: 0px 20px;
+}
+#result #info p{
+    font-size: 20px;
+    margin: 10px 20px;
+    padding: 0px 20px;
+}
+#result #posterImg{
+    
+    width: 50%;
+    /* height: 100%; */
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 20px 0px;
+    padding: 0px 20px;
+}

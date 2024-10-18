@@ -1,0 +1,33 @@
+<%- include ("partials/header.ejs") %>
+    <div id="mainContainer">
+        <form id="search" method="post" action="/search">
+            <input type="text" placeholder="Search for any Movie..." id="movieName" name="movieName">
+            <button id="searchBtn">Search</button>
+        </form>
+        <% if(locals.data) { %>
+            <div id="result">
+            <div id="movie" tabindex="0">
+                <div id="info">
+                    <h1><%= title %></h1>
+                    <p id="plot"><%= plot %></p>
+                    <p id="release">Released on: <%= release %></p>
+                    <p id="actor">Actors: <%= actor %></p>
+                    <p id="director">Director: <%= director %></p>
+                    <p id="writer">Writer: <%= writer %></p>
+                    <p id="awards">Awards: <%= awards %></p>
+                    <p id="imdbRating">IMDB Rating: <%= imdbRating %></p>
+                    <p id="runtime">Runtime: <%= runtime %></p>
+                    <p id="boxOffice">Box Office: <%= boxOffice %></p>
+                </div>
+                <div id="poster">
+                    <img src="<%= poster %>" alt="poster" id="posterImg">
+                </div>
+            </div>
+        </div>
+        <% } else { %>
+            <div id="result">
+                <h1><%= error %></h1>
+            </div>
+        <% } %>
+    </div>
+<%- include ("partials/footer.ejs") %>
