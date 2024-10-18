@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.use(express.json());
 app.set('view engine', 'ejs');
 
-const apiKey = 'fb3afb4f';
+const apiKey = 'your api key';
 const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=`;
 
 app.get('/', async (req, res) => {
