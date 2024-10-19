@@ -1,6 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import http from 'http';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -11,7 +13,7 @@ app.use(express.static('public'));
 app.use(express.json());
 app.set('view engine', 'ejs');
 
-const apiKey = 'your api key';
+const apiKey = process.env.API_KEY;
 const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=`;
 
 app.get('/', async (req, res) => {
